@@ -19,7 +19,7 @@ export const en: SiteContent = {
   lang: "en",
   htmlLang: "en-US",
   meta: {
-    title: "Andamio Labs | Custom software for your business",
+    title: "NodeCube | Custom software for your business",
     description:
       "We build custom booking, scheduling, ordering and inventory systems for businesses in Colombia and Latin America. Get a quote over WhatsApp or email.",
   },
@@ -40,7 +40,7 @@ export const en: SiteContent = {
     menuClose: "Close menu",
   },
   hero: {
-    titleLines: ["Andamio", "Labs"],
+    titleLines: ["Node", "Cube"],
     lead: "Custom software so your business runs itself. Bookings, appointments, orders and inventory in one place.",
     secondaryCta: "See solutions",
     sceneHint: "Drag a cube and let go",
@@ -165,7 +165,7 @@ export const en: SiteContent = {
     detailsLabel: "Anything else we should know",
     optional: "Optional",
     previewLabel: "Your message",
-    greeting: "Hi, Andamio Labs. I'd like a quote for a project.",
+    greeting: "Hi, NodeCube. I'd like a quote for a project.",
     businessLine: "Business",
     needsLine: "I need",
     timingLine: "Timeline",
@@ -181,7 +181,7 @@ export const en: SiteContent = {
     title: "Team",
     lead: "Three developers in Colombia. We work remotely with your business.",
     dragHint: "Pull the cards",
-    badgeOrg: "andamio labs",
+    badgeOrg: "nodecube",
     portfolio: "Portfolio",
   },
   faq: {
@@ -212,7 +212,7 @@ export const en: SiteContent = {
   contact: {
     title: "Let's talk.",
     lead: "Tell us about your business. We reply ourselves.",
-    whatsappMessage: "Hi, Andamio Labs. I'd like to tell you about my business.",
+    whatsappMessage: "Hi, NodeCube. I'd like to tell you about my business.",
     whatsappCta: "Message on WhatsApp",
     copyEmail: "Copy email",
     copied: "Copied",

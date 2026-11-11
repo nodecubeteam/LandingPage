@@ -19,7 +19,7 @@ export const es: SiteContent = {
   lang: "es",
   htmlLang: "es-CO",
   meta: {
-    title: "Andamio Labs | Software a la medida para tu negocio",
+    title: "NodeCube | Software a la medida para tu negocio",
     description:
       "Construimos reservas, citas, pedidos e inventario a la medida para negocios de Colombia y Latinoamérica. Cotiza por WhatsApp o correo.",
   },
@@ -40,7 +40,7 @@ export const es: SiteContent = {
     menuClose: "Cerrar menú",
   },
   hero: {
-    titleLines: ["Andamio", "Labs"],
+    titleLines: ["Node", "Cube"],
     lead: "Software a la medida para que tu negocio funcione solo. Reservas, citas, pedidos e inventario en un solo lugar.",
     secondaryCta: "Ver soluciones",
     sceneHint: "Arrastra un cubo y suéltalo",
@@ -165,7 +165,7 @@ export const es: SiteContent = {
     detailsLabel: "Algo más que debamos saber",
     optional: "Opcional",
     previewLabel: "Tu mensaje",
-    greeting: "Hola, Andamio Labs. Quiero cotizar un proyecto.",
+    greeting: "Hola, NodeCube. Quiero cotizar un proyecto.",
     businessLine: "Negocio",
     needsLine: "Necesito",
     timingLine: "Para",
@@ -181,7 +181,7 @@ export const es: SiteContent = {
     title: "Equipo",
     lead: "Tres programadores en Colombia. Trabajamos de manera remota con tu negocio.",
     dragHint: "Jala las tarjetas",
-    badgeOrg: "andamio labs",
+    badgeOrg: "nodecube",
     portfolio: "Portafolio",
   },
   faq: {
@@ -212,7 +212,7 @@ export const es: SiteContent = {
   contact: {
     title: "Hablemos.",
     lead: "Cuéntanos de tu negocio. Te respondemos nosotros mismos.",
-    whatsappMessage: "Hola, Andamio Labs. Quiero contarles sobre mi negocio.",
+    whatsappMessage: "Hola, NodeCube. Quiero contarles sobre mi negocio.",
     whatsappCta: "Escribir por WhatsApp",
     copyEmail: "Copiar correo",
     copied: "Copiado",

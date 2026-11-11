@@ -8,7 +8,7 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://andamiolabs.pages.dev',
+  site: 'https://nodecube.pages.dev',
   integrations: [react(), sitemap()],
 
   vite: {

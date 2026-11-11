@@ -1,6 +1,6 @@
-# Andamio Labs
+# NodeCube
 
-Landing page de Andamio Labs, equipo de desarrollo de software a la medida para negocios de Colombia y Latinoamérica: reservas, agendamiento de citas, pedidos, inventario y paneles administrativos instalables.
+Landing page de NodeCube, equipo de desarrollo de software a la medida para negocios de Colombia y Latinoamérica: reservas, agendamiento de citas, pedidos, inventario y paneles administrativos instalables.
 
 ## Stack
 
@@ -24,4 +24,4 @@ npm run build
 
 ## Sitio
 
-https://andamiolabs.pages.dev
+https://nodecube.pages.dev
