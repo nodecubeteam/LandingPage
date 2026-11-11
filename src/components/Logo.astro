@@ -12,10 +12,10 @@ const { class: className = "" } = Astro.props;
 
 <span class={`logo ${className}`}>
   <span class="mark" aria-hidden="true">
-    <Image src={markLight} alt="" width={68} height={65} format="png" class="mark-on-dark" loading="eager" />
-    <Image src={mark} alt="" width={68} height={65} format="png" class="mark-on-light" loading="eager" />
+    <Image src={markLight} alt="" width={68} height={72} format="png" class="mark-on-dark" loading="eager" />
+    <Image src={mark} alt="" width={68} height={72} format="png" class="mark-on-light" loading="eager" />
   </span>
-  <span class="word">Andamio Labs</span>
+  <span class="word">Node<span class="word-strong">Cube</span></span>
 </span>
 
 <style>
@@ -52,9 +52,13 @@ const { class: className = "" } = Astro.props;
   }
 
   .word {
-    font-family: "Montserrat Wordmark", var(--font-sans);
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-family: var(--font-sans);
+    font-weight: 500;
+    font-size: 1.2rem;
     letter-spacing: -0.01em;
+  }
+
+  .word-strong {
+    font-weight: 700;
   }
 </style>
