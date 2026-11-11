@@ -1,7 +1,7 @@
 import { contact } from "./contact";
 import { team } from "./team";
 
-export const organizationProfiles = ["https://github.com/Andamio-Labs"];
+export const organizationProfiles = ["https://github.com/nodecubeteam"];
 
 export const buildStructuredData = (description: string, inLanguage: string) => {
   const organizationId = `${contact.siteUrl}/#organization`;
