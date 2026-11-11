@@ -1,7 +1,7 @@
 export const contact = {
   whatsappNumber: "573054795044",
   whatsappDisplay: "+57 305 479 5044",
-  email: "andamiolabs@gmail.com",
+  email: "nodecubeteam@gmail.com",
   siteUrl: "https://nodecube.pages.dev",
 };
 
