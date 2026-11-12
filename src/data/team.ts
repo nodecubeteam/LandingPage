@@ -36,5 +36,6 @@ export const team: TeamMember[] = [
     role: { es: "Desarrollador full-stack", en: "Full-stack developer" },
     github: "santiago123-dex",
     linkedin: "santiago-fajardo-morales-7a304b379",
+    portfolio: "https://portafolio-beta-nine-92.vercel.app",
   },
 ];
