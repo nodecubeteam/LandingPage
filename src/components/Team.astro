@@ -294,6 +294,7 @@ const strapText = Array.from({ length: 6 }, () => content.team.badgeOrg).join(" 
     color: var(--color-ink);
     font-size: 1.15rem;
     text-decoration: none;
+    cursor: pointer;
     transition: background-color var(--duration-ui) ease;
   }
 
@@ -418,7 +419,6 @@ const strapText = Array.from({ length: 6 }, () => content.team.badgeOrg).join(" 
         state.dragging = true;
         state.moved = false;
         state.pointerId = event.pointerId;
-        state.badge.setPointerCapture(event.pointerId);
         state.lastAngle = state.angle.value;
         state.lastTime = performance.now();
         state.startX = event.clientX;
@@ -429,6 +429,7 @@ const strapText = Array.from({ length: 6 }, () => content.team.badgeOrg).join(" 
       state.badge.addEventListener("pointermove", (event) => {
         if (state.dragging && event.pointerId === state.pointerId) {
           if (!state.moved && Math.hypot(event.clientX - state.startX, event.clientY - state.startY) < 6) return;
+          if (!state.moved) state.badge.setPointerCapture(event.pointerId);
           state.moved = true;
           const next = angleFor(state, event);
           const now = performance.now();
