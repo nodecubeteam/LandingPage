@@ -363,6 +363,7 @@ const strapText = Array.from({ length: 6 }, () => content.team.badgeOrg).join(" 
         angle: new Spring(0, { response: 0.95, damping: 0.38 }),
         drop: new Spring(0, { response: 0.7, damping: 0.55 }),
         dragging: false,
+        calm: false,
         moved: false,
         pointerId: -1,
         lastAngle: 0,
@@ -388,9 +389,12 @@ const strapText = Array.from({ length: 6 }, () => content.team.badgeOrg).join(" 
       last = now;
       let active = false;
       states.forEach((state) => {
-        if (!state.dragging) state.angle.step(delta);
+        if (!state.dragging) {
+          if (state.calm) state.angle.velocity = 0;
+          else state.angle.step(delta);
+        }
         state.drop.step(delta);
-        if (state.dragging || !state.angle.settled || !state.drop.settled) active = true;
+        if (state.dragging || (!state.calm && !state.angle.settled) || !state.drop.settled) active = true;
       });
       render();
       frame = active ? requestAnimationFrame(tick) : 0;
@@ -414,8 +418,19 @@ const strapText = Array.from({ length: 6 }, () => content.team.badgeOrg).join(" 
     }
 
     states.forEach((state) => {
+      const linksArea = state.badge.querySelector<HTMLElement>(".links");
+      linksArea?.addEventListener("pointerenter", () => {
+        state.calm = true;
+        start();
+      });
+      linksArea?.addEventListener("pointerleave", () => {
+        state.calm = false;
+        start();
+      });
+
       state.badge.addEventListener("pointerdown", (event) => {
         if (state.dragging) return;
+        if ((event.target as Element).closest("a")) return;
         state.dragging = true;
         state.moved = false;
         state.pointerId = event.pointerId;
@@ -440,7 +455,7 @@ const strapText = Array.from({ length: 6 }, () => content.team.badgeOrg).join(" 
           state.angle.value = next;
           return;
         }
-        if (!reduced && event.pointerType === "mouse" && !state.dragging) {
+        if (!reduced && event.pointerType === "mouse" && !state.dragging && !state.calm) {
           state.angle.velocity += event.movementX * -0.25;
           start();
         }
